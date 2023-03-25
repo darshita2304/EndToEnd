@@ -11,11 +11,52 @@ How to create end to end project and upload it
 3. configure git
     git init
     git add . # by default all files with environment and its files will be uploaded in github....
-    git reset # to reset it and telling to ignore environmetns file
+    git reset # to reset it and telling to ignore environmetns file - list file/folder in gitignore - so will not uploaded on git
     git add .
     git commit  -m 'first commit'
     git branch
     git branch -M main
     git remote add origin https://github.com/darshita2304/EndToEnd.git
     git push -u origin main
-    
+4. create requirements.txt
+    i. list all required library/packed inside it..
+    ii. isntall it by giving below command
+        pip install -r requirements.txt
+5. create notebook folder for jupiter files
+    i. create test.ipynb file into this folder... kernerl will be setup automatically
+6. create project name - census-income
+    create some folders.. like
+    components
+    configureexception
+    logging
+    pipelines
+    utils
+7. crete componenets files as below 
+    data_ingetion
+    data_validation
+    data_preprocessing
+    model_trainer
+    model_evaluation
+8. create file in config folder    
+    artifact.py
+    config.py
+9. create file in exception folder 
+    exception.py
+10. create file in logging folder
+    logging.py
+11. create file in pipelines folder
+    training_pipelines.py
+12. create file in utils folder
+    utils.py
+
+
+to make census-income folder as package, we need to create __init__.py file
+in each folder, __init__.py is created to consider it package
+
+13. to create a package.. __init__.py files in all folder
+14. create setup.py in main folder/project folder...
+15. we need to install package in current environment, run the following commandpython setup.py install
+    python setup.py install
+
+16. no need to push following folder in git so put it in .gitignore 
+
