@@ -12,12 +12,9 @@ How to create end to end project and upload it
     git init
     git add . # by default all files with environment and its files will be uploaded in github....
     git reset # to reset it and telling to ignore environmetns file
-    git add.
+    git add .
     git commit  -m 'first commit'
-    
-
-    git add README.md
-    git commit -m "first commit"
+    git branch
     git branch -M main
     git remote add origin https://github.com/darshita2304/EndToEnd.git
     git push -u origin main
